@@ -1,0 +1,21 @@
+@mixin iconMain {
+    color: #f1bc7a;
+    background-color: #b22830;
+}
+
+.listsliderBar {
+    position: relative;
+    .sliderpvt {
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+    button {
+        position: absolute;
+        right: 30px;
+        color: #f1bc7a;
+    }
+}

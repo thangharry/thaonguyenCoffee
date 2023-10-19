@@ -1,0 +1,32 @@
+@use "../abstracts";
+
+.wrapContact {
+    // height: 60vh;
+    .contact {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+table {
+    margin: auto;
+    border: 0.3rem solid #f1bc7a;
+    margin-bottom: 5rem;
+}
+tr {
+    border: 2px solid #f1bc7a;
+    td {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 1rem;
+        font-size: 1.2rem !important;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+b {
+    font-size: 1.2rem;
+    font-weight: bold !important;
+}

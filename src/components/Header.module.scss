@@ -1,0 +1,301 @@
+// đặt thuộc tính chung
+@use "../abstracts";
+
+@mixin kieuChuHeader {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+@mixin ColorMainheader {
+    background-color: #b22830;
+    border-top: 0.8rem solid #53382c;
+    padding: 0.3rem 10px 0.3rem;
+}
+@mixin handleLogo {
+    width: 10rem;
+    height: 4.5rem;
+    border-radius: 9px;
+    object-fit: contain;
+}
+@mixin opacityListHeader {
+    background-color: #b22830;
+}
+@mixin titleListMenu {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #f1bc7a;
+}
+@mixin itemSubMenu {
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 0.4rem;
+    // background-color: #fff;
+}
+// code scss
+.hidden {
+    @include abstracts.breakpoint(lg) {
+        display: none !important;
+    }
+}
+
+.show {
+    @include abstracts.breakpoint(lg) {
+        display: flex !important;
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.container {
+    position: relative;
+    @include ColorMainheader;
+    margin: 0px !important;
+
+    max-width: inherit !important;
+
+    .wrapHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        @include abstracts.breakpoint(lg) {
+            margin-left: -2rem;
+        }
+        @include handleLogo();
+    }
+
+    .listContentHeader {
+        .IconCloseMenu {
+            display: none;
+            @include abstracts.breakpoint(lg) {
+                z-index: 2000;
+                display: flex;
+                position: absolute;
+                top: 5%;
+                right: 10%;
+            }
+        }
+
+        @include abstracts.breakpoint(lg) {
+            // display: none;
+            position: fixed;
+            inset: 0 0% 0%;
+            z-index: 9;
+            background-color: #b22830;
+            margin-left: 0;
+            width: 55%;
+        }
+
+        display: flex;
+
+        @include abstracts.breakpoint(lg) {
+            padding-top: 4rem;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        & > span {
+            @include opacityListHeader;
+            @include abstracts.breakpoint(lg) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            & > a {
+                padding: 1rem 1.5rem;
+                cursor: pointer;
+            }
+            & a:hover {
+                transition: 0.6s ease-in;
+                background-color: #53382c;
+                color: #f1bc7a;
+            }
+
+            @include abstracts.breakpoint(lg) {
+                margin-left: 1rem;
+            }
+        }
+        & > span ~ span {
+            margin-left: 1rem;
+            @include abstracts.breakpoint(lg) {
+                margin-top: 3rem;
+            }
+        }
+        & a {
+            @include kieuChuHeader;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+
+    .iconMenu {
+        display: none;
+
+        @include abstracts.breakpoint(lg) {
+            display: block;
+            color: #f1bc7a;
+            // background-color:#53382c;
+            margin-right: 2rem;
+        }
+    }
+}
+
+.resIcon {
+    display: none;
+    @include abstracts.breakpoint(lg) {
+        display: flex;
+        color: #f1bc7a;
+    }
+}
+.boxThucdon {
+    &:hover .thucdon {
+        transition: 0.4s ease-in-out;
+        padding-bottom: 1.7rem;
+    }
+    &:hover .menuthucdon {
+        @include abstracts.breakpoint(lg) {
+            // display: none;
+        }
+        visibility: visible;
+        transition: 0.7s ease-in;
+        top: 4.5rem;
+    }
+}
+// silderBar Menu thực đơn
+.menuthucdon {
+    position: absolute;
+    z-index: 100;
+
+    visibility: hidden;
+
+    top: 8rem;
+    left: 0;
+    right: 0;
+    height: 20rem;
+    background-color: #53382c;
+
+    transition: 0.5s ease-in-out;
+
+    @include abstracts.breakpoint(lg) {
+        position: absolute;
+
+        height: 25rem;
+        width: 180%;
+    }
+    .listmenu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    & > div {
+        padding-left: 4rem;
+        @include abstracts.breakpoint(lg) {
+            padding-left: 0;
+            padding-top: 2rem;
+        }
+    }
+}
+.col1 {
+    padding: 1.2rem;
+    max-width: 100% !important;
+    @include abstracts.breakpoint(lg) {
+        padding: 0;
+        display: flex;
+        grid-column: auto auto;
+    }
+    .listmenu {
+        @include abstracts.breakpoint(lg) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .listmenu ~ .listmenu {
+        margin-top: 2rem;
+        @include abstracts.breakpoint(lg) {
+            margin-top: 0rem;
+        }
+    }
+    .itemmenu ~ .itemmenu {
+        margin-left: 1rem;
+        @include abstracts.breakpoint(lg) {
+            margin-top: 1rem;
+        }
+    }
+
+    .itemmenu {
+        width: 20rem !important;
+        height: 4rem;
+        border: 1px solid #f1bc7a;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include abstracts.breakpoint(lg) {
+            width: 9rem !important;
+            height: 3rem !important;
+        }
+        & > a {
+            @include titleListMenu;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            @include abstracts.breakpoint(lg) {
+                font-size: 0.8rem;
+            }
+        }
+        .icon {
+            width: 2.5rem;
+            margin-right: 0.5rem;
+            @include abstracts.breakpoint(lg) {
+                width: 1.8rem;
+            }
+        }
+    }
+    .itemmenu:hover {
+        background-color: #fff;
+        box-shadow: 0px 5px 8px 0px rgba(255, 255, 255, 0.75);
+        -webkit-box-shadow: 0px 5px 8px 0px rgba(255, 255, 255, 0.75);
+        -moz-box-shadow: 0px 5px 8px 0px rgba(255, 255, 255, 0.75);
+        & a {
+            color: #b22830 !important;
+            background-color: #fff !important;
+        }
+    }
+}
+
+// subsupMenu
+
+.itemmenu__subMenu {
+    margin-top: 1rem;
+    li ~ li {
+        margin-top: 0.4rem;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    a {
+        text-transform: capitalize !important;
+        font-size: 1rem !important;
+        text-align: center;
+    }
+    svg {
+        opacity: 0;
+    }
+    & > li:hover svg {
+        transition: 0.2s ease-in;
+
+        opacity: 1;
+        color: #fff;
+    }
+    & > li:hover a {
+        transition: 0.2s ease-in;
+        transform: translateX(0.5rem);
+    }
+}
+.resIcon ~ a {
+    @include abstracts.breakpoint(lg) {
+        font-size: 0.8rem !important;
+    }
+}

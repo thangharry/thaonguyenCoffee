@@ -1,0 +1,187 @@
+@mixin h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+@mixin a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+}
+@mixin bg($url) {
+    background-image: $url;
+}
+
+.container {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: inherit !important;
+}
+.MenuCoffee {
+    padding: 3rem 2rem 0 3rem;
+
+    width: 50rem;
+    h3 {
+        @include h3();
+        a {
+            display: block;
+            color: #faebd7;
+            text-decoration: none;
+            transition: 0.4s ease-in;
+            &:hover {
+                color: #b22830;
+            }
+        }
+    }
+
+    .MenuParagrap {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #faebd7;
+        margin-bottom: 2rem;
+    }
+
+    .wrapLink {
+        position: relative;
+        z-index: 8;
+        a {
+            color: #faebd7;
+            border: 0.1rem solid #faebd7;
+            @include a();
+        }
+    }
+}
+.wrapItem {
+    .wrapMenu {
+        width: 100%;
+        height: 24rem;
+
+        background-image: url("../img/thucdon-bg-01.jpg");
+        // @include bg("../img/thucdon-bg-01.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+        .Menumedia {
+            position: relative;
+            img {
+                display: block;
+                position: absolute;
+
+                bottom: -10rem;
+                left: 0rem;
+
+                width: 32rem;
+                height: 43rem;
+                object-fit: contain;
+
+                z-index: 1;
+            }
+        }
+    }
+}
+
+// freeze
+.freezeMenu {
+    background-image: url("../img/thucdon-bg-02.jpg");
+    width: 100%;
+    height: 24rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    h3 {
+        @include h3();
+        a {
+            display: block;
+            color: #006400;
+        }
+    }
+    .wrapLink {
+        a {
+            color: #006400;
+            border: 0.1rem solid #006400;
+            @include a();
+        }
+    }
+}
+.freeze {
+    position: relative;
+    img {
+        display: block;
+        position: absolute;
+
+        bottom: -10rem;
+        left: 0rem;
+
+        width: 32rem;
+        height: 43rem;
+        object-fit: contain;
+
+        z-index: 1;
+    }
+}
+.freezeParagrap {
+    color: #006400;
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    margin-bottom: 2rem !important;
+    width: 30rem;
+}
+
+.wrapItem {
+    .tea {
+        background-image: url("../img/thucdon-bg-03.jpg");
+        width: 100%;
+        height: 24rem;
+
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        .Menumedia {
+            position: relative;
+            img {
+                display: block;
+                position: absolute;
+
+                bottom: -5rem;
+                left: -4rem;
+
+                width: 36rem;
+                height: 33rem;
+                object-fit: contain;
+
+                z-index: 1;
+            }
+        }
+    }
+}
+.MenuTea {
+    padding: 3rem 2rem 0 3rem;
+
+    width: 50rem;
+    .titleTea {
+        @include h3();
+
+        a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.4s ease-in;
+            &:hover {
+                color: #b22830;
+            }
+        }
+    }
+    .MenuParagrap {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    .wrapLink {
+        a {
+            color: #fff;
+            border: 0.1rem solid #fff;
+            @include a();
+        }
+    }
+}

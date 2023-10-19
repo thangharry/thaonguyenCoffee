@@ -1,0 +1,62 @@
+@use "../abstracts";
+
+@mixin fontContent($color, $width) {
+    font-size: 1.2rem;
+    width: $width;
+    color: $color;
+}
+.tea {
+    color: #d2af4f;
+}
+.contentProduct {
+    @include fontContent(#d2af4f, 50%);
+    margin-bottom: 2rem !important;
+}
+
+.productItem {
+    text-align: center;
+    margin-bottom: 1rem;
+    .img {
+        margin-bottom: 1rem;
+        img {
+            @include abstracts.breakpoint(lg) {
+                width: 9rem;
+            }
+            width: 20rem;
+            object-fit: cover;
+            &:hover {
+                box-shadow: 0px 3px 4px -1px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 0px 3px 4px -1px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 3px 4px -1px rgba(0, 0, 0, 0.75);
+            }
+        }
+    }
+    h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        a {
+            text-decoration: none;
+            color: #d2af4f;
+            text-transform: uppercase;
+            @include abstracts.breakpoint(lg) {
+                font-size: 1rem;
+            }
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+    .price {
+        body1 {
+            font-size: 1.1rem;
+            b {
+                margin-left: 0.3rem;
+                color: #d2af4f;
+                font-weight: bold;
+            }
+        }
+    }
+}
+.wrapbody {
+    margin-bottom: 2rem;
+}

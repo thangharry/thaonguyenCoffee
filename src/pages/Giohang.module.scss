@@ -1,0 +1,57 @@
+@use "../abstracts";
+
+// -------------------------
+$mainColor: #53382c;
+$btn: #cf181b;
+$colorText: #333;
+$fontsixecart: 1.6rem;
+@mixin Hedertitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $mainColor;
+    text-transform: uppercase;
+}
+.listShoppingCart {
+    @include abstracts.breakpoint(lg) {
+        margin-top: 1rem;
+    }
+}
+.titleCart {
+    margin: 5rem 0 0rem !important;
+    @include Hedertitle();
+}
+.wrapProducts {
+    &_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include abstracts.breakpoint(lg) {
+            margin-bottom: 1.5rem;
+            gap: 1rem;
+        }
+    }
+
+    .cartTitleProduct {
+        text-transform: capitalize;
+        font-size: $fontsixecart;
+        font-weight: bold;
+        color: $mainColor;
+        @include abstracts.breakpoint(lg) {
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+        }
+    }
+    .cartPriceProduct {
+        font-size: $fontsixecart;
+        text-transform: capitalize;
+        @include abstracts.breakpoint(lg) {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+    }
+}
+.imgCard {
+    @include abstracts.breakpoint(lg) {
+        display: none;
+    }
+}

@@ -1,0 +1,92 @@
+@use "../abstracts";
+
+@mixin Mainfooter {
+    background-color: #53382c;
+    padding: 1.8rem 2.5rem;
+}
+@mixin colorMain {
+    color: #fff;
+}
+@mixin hoverIconSocial {
+    background-color: #b22830;
+
+    transition: 0.4s ease-in-out;
+
+    transform: translateY(-0.2rem);
+}
+
+@mixin fontsizeFooter {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.Container {
+    @include Mainfooter;
+    margin: 0px !important;
+
+    max-width: inherit !important;
+}
+.wrapFooter {
+    display: flex;
+    align-items: center;
+    & > div ~ div {
+        margin-left: 2.5rem;
+        @include abstracts.breakpoint(lg) {
+            margin-left: 0;
+        }
+    }
+    .socialfooter span ~ span {
+        margin-left: 0.5rem;
+    }
+    .socialfooter {
+        @include abstracts.breakpoint(lg) {
+            display: none;
+        }
+    }
+    .socialfooter span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        width: 1.8rem;
+        height: 1.8rem;
+        background-color: #fff;
+        border-radius: 0.3rem;
+
+        & a {
+            color: #53382c;
+        }
+        &:hover {
+            @include hoverIconSocial;
+            & a {
+                @include colorMain;
+            }
+        }
+    }
+
+    .copyright {
+        @include fontsizeFooter;
+        text-transform: capitalize;
+        @include abstracts.breakpoint(lg) {
+            line-height: 1.5rem;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+    .emailFooter,
+    .phoneFooter {
+        display: flex;
+        align-items: center;
+        & svg {
+            @include colorMain;
+        }
+        & a {
+            @include fontsizeFooter;
+            padding-left: 0.5rem;
+        }
+        @include abstracts.breakpoint(lg) {
+            display: none;
+        }
+    }
+}
