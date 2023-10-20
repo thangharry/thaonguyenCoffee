@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Trasua.module.scss";
-import kemsua from "d:/figmaReact/figma-01/src/img/pagecoffee-kemsua.jpg";
+import kemsua from "../img/pagecoffee-kemsua.jpg";
 import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
 import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";

@@ -1,18 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import "./index.css";
+
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/Home";
 import Hethongcuahang from "./pages/Hethongcuahang";
-import MenuList from "./pages/MenuList";
+
 import Coffee from "./pages/Coffee";
-import Freeze from "./pages/Trasua";
-import Tea from "./pages/Suachua";
+
 import Detail from "./pages/Detail";
-import DetailFreeze from "./pages/DetailTrasua";
-import DetailTea from "./pages/DetailSuachua";
+
 import Trasua from "./pages/Trasua";
 import DetailTrasua from "./pages/DetailTrasua";
 import Suachua from "./pages/Suachua";
@@ -32,7 +30,7 @@ import Soda from "./pages/Soda";
 import DetailSoda from "./pages/DetailSoda";
 import Monkhac from "./pages/Monkhac";
 import DetailMonkhac from "./pages/DetailMonkhac";
-import { CartProvider, ShopContext } from "./pages/context/Shop_context";
+import { CartProvider } from "./pages/context/Shop_context";
 import Lienhe from "./pages/Lienhe";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -48,7 +46,6 @@ root.render(
                             path="he-thong-cua-hang"
                             element={<Hethongcuahang />}
                         />
-                        {/* <Route path="thuc-don" element={<MenuList />} /> */}
                         <Route path="ca-phe.html" element={<Coffee />} />
 
                         <Route path="ca-phe.html/:id" element={<Detail />} />
