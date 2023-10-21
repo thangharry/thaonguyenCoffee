@@ -56,7 +56,9 @@ h1 {
 
     address {
         display: inline;
-        width: 15rem;
+        @include abstracts.breakpoint(lg) {
+            width: 15rem;
+        }
     }
 }
 .mapStore {
