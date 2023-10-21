@@ -7,6 +7,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+
 function Footer(props) {
     return (
         <Container className={styles.Container} style={{ zIndex: 100 }}>
@@ -42,13 +43,13 @@ function Footer(props) {
                         to="https://mail.google.com/mail/u/0/#inbox"
                         target="_blank"
                     >
-                        PhuongVanThang@gmail.com
+                        PhuongVanThang@gmail
                     </Link>
                 </div>
 
                 <div className={styles.phoneFooter}>
                     <LocalPhoneIcon />
-                    <a href="tel:19006847">+84 1900 6847</a>
+                    <a href="tel:0932609233">0932609233</a>
                 </div>
             </div>
         </Container>

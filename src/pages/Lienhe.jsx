@@ -16,7 +16,8 @@ function Lienhe(props) {
                             <b>
                                 <StoreIcon fontSize="large" /> Địa chỉ:
                             </b>
-                            12/23 Phạm văn Đồng
+                            &ensp;5 Đường Số 13, Khu Phố 5, P. Hiệp Bình Chánh,
+                            Thành Phố Thủ Đức, TP. HCM
                         </td>
                     </tr>
 
@@ -25,7 +26,7 @@ function Lienhe(props) {
                             <b>
                                 <CallIcon fontSize="large" /> Số Điện Thoại:
                             </b>
-                            <a href="tel:123456789">123456789</a>
+                            <a href="tel:123456789">&ensp;0932609233</a>
                         </td>
                     </tr>
 
@@ -34,7 +35,7 @@ function Lienhe(props) {
                             <b>
                                 <FacebookIcon fontSize="large" /> Fanpage:
                             </b>
-                            thnags.face
+                            &ensp; thnags.face
                         </td>
                     </tr>
                 </tbody>
