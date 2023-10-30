@@ -51,6 +51,10 @@ $fontsixecart: 1.6rem;
     }
 }
 .imgCard {
+    img {
+        width: 10rem;
+        object-fit: cover;
+    }
     @include abstracts.breakpoint(lg) {
         display: none;
     }

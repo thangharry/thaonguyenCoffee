@@ -2,36 +2,40 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Nuocep.module.scss";
-import kemsua from "../img/pagecoffee-kemsua.jpg";
-import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
-import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
+import epcam from "../img/nuocepcamTN.jpeg";
+import epoi from "../img/nuocepoiTN.jpeg";
+import epduahau from "../img/nuocepduahauTN.jpeg";
+import epdua from "../img/nuocepduaTN.jpeg";
+
+// sửa ảnh
+
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";
 
 export let coffeeProduct = [
     {
         id: 1,
-        img: kemsua,
+        img: epcam,
         name: "nước ép cam",
         price: 25,
     },
     {
         id: 2,
 
-        img: bacsiuda,
+        img: epduahau,
         name: "nước ép dưa hấu",
         price: 28,
     },
     {
         id: 3,
 
-        img: caraMachiata,
+        img: epoi,
         name: "nước ép ổi",
         price: 28,
     },
     {
         id: 4,
 
-        img: mochaMachiato,
+        img: epdua,
         name: "nước ép thơm",
         price: 28,
     },
@@ -95,28 +99,28 @@ function Nuocep(props) {
     let coffeeProduct = [
         {
             id: 1,
-            img: kemsua,
+            img: epcam,
             name: "nước ép cam",
             price: 25,
         },
         {
             id: 2,
 
-            img: bacsiuda,
+            img: epduahau,
             name: "nước ép dưa hấu",
             price: 28,
         },
         {
             id: 3,
 
-            img: caraMachiata,
+            img: epoi,
             name: "nước ép ổi",
             price: 28,
         },
         {
             id: 4,
 
-            img: mochaMachiato,
+            img: epdua,
             name: "nước ép thơm",
             price: 28,
         },

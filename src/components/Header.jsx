@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Logo from "../img/highlands-logo.png";
 import styles from "./Header.module.scss";
-import { Container, Grid, Typography } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 import TNLOGO from "../img/thaonguyênlogo.png";
 import iconCoffee from "../img/iconcoffee-cup.png";
@@ -15,7 +14,7 @@ import iconsinhto from "../img/iconsinhto.png";
 import iconnuocep from "../img/iconnuocep.png";
 import iconsoda from "../img/iconsoda.png";
 import iconcoffeeShop from "../img/iconcoffee-shop.png";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CloseIcon from "@mui/icons-material/Close";
 

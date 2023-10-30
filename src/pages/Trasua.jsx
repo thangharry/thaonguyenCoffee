@@ -1,44 +1,48 @@
 import { Container, Grid, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Trasua.module.scss";
-import kemsua from "../img/pagecoffee-kemsua.jpg";
-import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
-import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
+import caramel from "../img/trasuacaramel.jpeg";
+import dacbiet from "../img/trasuadacbietTN.jpeg";
+import kemtrung from "../img/trasuakemtrungTN.jpeg";
+import socola from "../img/trasuasocolaTN.jpeg";
+import truyenthong from "../img/trasuatruyenthongTN.jpeg";
+
+// sửa ảnh
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";
 
 export let coffeeProduct = [
     {
         id: 1,
-        img: kemsua,
+        img: truyenthong,
         name: "Trà sữa truyền thống",
         price: 25,
     },
     {
         id: 2,
 
-        img: bacsiuda,
+        img: caramel,
         name: "Trà sữa trân châu caramel",
         price: 25,
     },
     {
         id: 3,
 
-        img: caraMachiata,
+        img: kemtrung,
         name: "Trà sữa kem trứng nướng",
         price: 30,
     },
     {
         id: 4,
 
-        img: mochaMachiato,
+        img: socola,
         name: "Trà sữa socola thạch socola",
         price: 30,
     },
     {
         id: 5,
 
-        img: mochaMachiato,
+        img: dacbiet,
         name: "Trà sữa đặc biệt",
         price: 35,
     },
@@ -55,35 +59,35 @@ function Trasua(props) {
     let coffeeProduct = [
         {
             id: 1,
-            img: kemsua,
+            img: truyenthong,
             name: "Trà sữa truyền thống",
             price: 25,
         },
         {
             id: 2,
 
-            img: bacsiuda,
+            img: caramel,
             name: "Trà sữa trân châu caramel",
             price: 25,
         },
         {
             id: 3,
 
-            img: caraMachiata,
+            img: kemtrung,
             name: "Trà sữa kem trứng nướng",
             price: 30,
         },
         {
             id: 4,
 
-            img: mochaMachiato,
+            img: socola,
             name: "Trà sữa socola thạch socola",
             price: 30,
         },
         {
             id: 5,
 
-            img: mochaMachiato,
+            img: dacbiet,
             name: "Trà sữa đặc biệt",
             price: 35,
         },

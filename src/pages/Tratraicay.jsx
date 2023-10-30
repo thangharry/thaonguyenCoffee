@@ -1,6 +1,11 @@
 import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import styles from "./Tratraicay.module.scss";
+import mangcau from "../img/tramangcauTN.jpeg";
+import trasenvang from "../img/trasenvangTN.jpeg";
+import chanhday from "../img/trachanhdayTN.jpeg";
+
+//sửa ảnh
 import kemsua from "../img/pagecoffee-kemsua.jpg";
 import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
 import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
@@ -38,7 +43,7 @@ export let coffeeProduct = [
     {
         id: 5,
 
-        img: mochaMachiato,
+        img: mangcau,
         name: "trà mãng cầu trân châu",
         price: 35,
     },
@@ -53,8 +58,8 @@ export let coffeeProduct = [
     {
         id: 7,
 
-        img: mochaMachiato,
-        name: "trà sen vàng thạch giòn kem macchiato",
+        img: trasenvang,
+        name: "trà sen vàng kem macchiato",
         price: 35,
     },
 
@@ -92,8 +97,8 @@ export let coffeeProduct = [
     {
         id: 12,
 
-        img: mochaMachiato,
-        name: "trà chanh dây thạch giòn kem macchiato",
+        img: chanhday,
+        name: "trà chanh dây kem macchiato",
         price: 35,
     },
 ];
@@ -130,7 +135,7 @@ function Tratraicay(props) {
         {
             id: 5,
 
-            img: mochaMachiato,
+            img: mangcau,
             name: "trà mãng cầu trân châu",
             price: 35,
         },
@@ -145,8 +150,8 @@ function Tratraicay(props) {
         {
             id: 7,
 
-            img: mochaMachiato,
-            name: "trà sen vàng thạch giòn kem macchiato",
+            img: trasenvang,
+            name: "trà sen vàng kem macchiato",
             price: 35,
         },
 
@@ -184,8 +189,8 @@ function Tratraicay(props) {
         {
             id: 12,
 
-            img: mochaMachiato,
-            name: "trà chanh dây thạch giòn kem macchiato",
+            img: chanhday,
+            name: "trà chanh dây kem macchiato",
             price: 35,
         },
     ];

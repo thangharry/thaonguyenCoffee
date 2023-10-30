@@ -2,29 +2,33 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Daxaykem.module.scss";
-import kemsua from "../img/pagecoffee-kemsua.jpg";
-import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
-import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
+import socola from "../img/socolaDaxayTN.jpeg";
+import matcha from "../img/matchdaxayTN.jpeg";
+import khoaimon from "../img/khoaimondaxayTN.jpeg";
+import suachuadaudo from "../img/suachuadaudoTN.jpeg";
+import daxaydau from "../img/daxaydau.webp";
+
+// sửa ảnh
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";
 
 export let coffeeProduct = [
     {
         id: 1,
-        img: kemsua,
+        img: socola,
         name: "socola-cookie đá xay kem",
         price: 40,
     },
     {
         id: 2,
 
-        img: bacsiuda,
+        img: matcha,
         name: "match đá xay kem",
         price: 40,
     },
     {
         id: 3,
 
-        img: caraMachiata,
+        img: khoaimon,
         name: "khoai môn đá xay kem",
         price: 40,
     },
@@ -38,14 +42,14 @@ export let coffeeProduct = [
     {
         id: 5,
 
-        img: mochaMachiato,
+        img: daxaydau,
         name: "dâu tây đá xay kem",
         price: 40,
     },
     {
         id: 6,
 
-        img: mochaMachiato,
+        img: suachuadaudo,
         name: " sữa chua đậu đỏ đá xay",
         price: 35,
     },
@@ -55,21 +59,21 @@ function Daxaykem(props) {
     let coffeeProduct = [
         {
             id: 1,
-            img: kemsua,
+            img: socola,
             name: "socola-cookie đá xay kem",
             price: 40,
         },
         {
             id: 2,
 
-            img: bacsiuda,
+            img: matcha,
             name: "match đá xay kem",
             price: 40,
         },
         {
             id: 3,
 
-            img: caraMachiata,
+            img: khoaimon,
             name: "khoai môn đá xay kem",
             price: 40,
         },
@@ -83,14 +87,14 @@ function Daxaykem(props) {
         {
             id: 5,
 
-            img: mochaMachiato,
+            img: daxaydau,
             name: "dâu tây đá xay kem",
             price: 40,
         },
         {
             id: 6,
 
-            img: mochaMachiato,
+            img: suachuadaudo,
             name: " sữa chua đậu đỏ đá xay",
             price: 35,
         },

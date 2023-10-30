@@ -1,16 +1,21 @@
 import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import styles from "./Coffee.module.scss";
-import kemsua from "../img/pagecoffee-kemsua.jpg";
-import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
-import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
+import denda from "../img/cafedendaTN.jpg";
+import bacsiuda from "../img/cafesuadaTN.webp";
+import suatuoi from "../img/cafesuatuoiTN.webp";
+import cacaosua from "../img/cacaosuaTN.webp";
+import bacxiuda from "../img/bacxiadaTN.jpg";
+import cafekemtrung from "../img/cafekemtrung.webp";
+import cafemui from "../img/cafemuoiTN.jpg";
+
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";
 import { Link } from "react-router-dom";
 
 export let coffeeProduct = [
     {
         id: 1,
-        img: kemsua,
+        img: denda,
         name: "cà phê đen ",
         price: 18,
     },
@@ -24,14 +29,14 @@ export let coffeeProduct = [
     {
         id: 3,
 
-        img: caraMachiata,
+        img: suatuoi,
         name: "cà phê sữa tươi",
         price: 25,
     },
     {
         id: 4,
 
-        img: mochaMachiato,
+        img: cacaosua,
         name: "cao cao sữa",
         price: 25,
     },
@@ -46,7 +51,7 @@ export let coffeeProduct = [
     {
         id: 6,
 
-        img: mochaMachiato,
+        img: bacxiuda,
         name: "bạc sỉu đá",
         price: 28,
     },
@@ -60,14 +65,14 @@ export let coffeeProduct = [
     {
         id: 8,
 
-        img: mochaMachiato,
+        img: cafemui,
         name: "cà phê kem muối",
         price: 30,
     },
     {
         id: 9,
 
-        img: mochaMachiato,
+        img: cafekemtrung,
         name: "cà phê kem trứng",
         price: 30,
     },
@@ -85,7 +90,7 @@ function Coffee(props) {
     let coffeeProduct = [
         {
             id: 1,
-            img: kemsua,
+            img: denda,
             name: "cà phê đen ",
             price: 18,
         },
@@ -99,14 +104,14 @@ function Coffee(props) {
         {
             id: 3,
 
-            img: caraMachiata,
+            img: suatuoi,
             name: "cà phê sữa tươi",
             price: 25,
         },
         {
             id: 4,
 
-            img: mochaMachiato,
+            img: cacaosua,
             name: "cao cao sữa",
             price: 25,
         },
@@ -121,7 +126,7 @@ function Coffee(props) {
         {
             id: 6,
 
-            img: mochaMachiato,
+            img: bacxiuda,
             name: "bạc sỉu đá",
             price: 28,
         },
@@ -135,14 +140,14 @@ function Coffee(props) {
         {
             id: 8,
 
-            img: mochaMachiato,
+            img: cafemui,
             name: "cà phê kem muối",
             price: 30,
         },
         {
             id: 9,
 
-            img: mochaMachiato,
+            img: cafekemtrung,
             name: "cà phê kem trứng",
             price: 30,
         },
