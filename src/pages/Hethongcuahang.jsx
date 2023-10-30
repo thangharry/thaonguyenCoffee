@@ -23,12 +23,11 @@ function Hethongcuahang(props) {
                             </Typography>
                             <ul>
                                 <li>
-                                    <Typography
-                                        variant="body1"
-                                        className="addressStore"
-                                    >
+                                    <Typography variant="body1">
                                         <StorefrontIcon className="icon" />
-                                        <b>địa chỉ:</b>
+                                        <b className={styles.addressStore}>
+                                            địa chỉ:
+                                        </b>
                                         <address>
                                             5 Đường Số 13, Khu Phố 5, P. Hiệp
                                             Bình Chánh TP. HCM
