@@ -2,12 +2,12 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Daxaykem.module.scss";
-import socola from "../img/socolaDaxayTN.jpeg";
 import matcha from "../img/matchdaxayTN.jpeg";
 import khoaimon from "../img/khoaimondaxayTN.jpeg";
 import suachuadaudo from "../img/suachuadaudoTN.jpeg";
 import daxaydau from "../img/daxaydau.webp";
 
+import socola from "../img/socolaDaxayTN.jpeg";
 // sửa ảnh
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";
 

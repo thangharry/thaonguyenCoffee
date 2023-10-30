@@ -174,7 +174,7 @@ function Coffee(props) {
             >
                 <div className={styles.img}>
                     <Link to={`/ca-phe.html/${i.id}`}>
-                        <img src={i.img} alt="kemsua" />
+                        <img src={i.img} alt="cafe" />
                     </Link>
                 </div>
                 <div className={styles.title}>
