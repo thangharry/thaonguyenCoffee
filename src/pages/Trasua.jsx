@@ -2,7 +2,7 @@ import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Trasua.module.scss";
-import caramel from "../img/trasuacaramel.jpeg";
+import caramel from "../img/cafedendaTN.jpg";
 import dacbiet from "../img/trasuadacbietTN.jpeg";
 import kemtrung from "../img/trasuakemtrungTN.jpeg";
 import socola from "../img/trasuasocolaTN.jpeg";
@@ -21,7 +21,7 @@ export let coffeeProduct = [
     {
         id: 2,
 
-        img: caramel,
+        img: mochaMachiato,
         name: "Trà sữa trân châu caramel",
         price: 25,
     },
@@ -66,7 +66,7 @@ function Trasua(props) {
         {
             id: 2,
 
-            img: caramel,
+            img: mochaMachiato,
             name: "Trà sữa trân châu caramel",
             price: 25,
         },
