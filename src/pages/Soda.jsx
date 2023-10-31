@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import styles from "./Soda.module.scss";
-import kemsua from "../img/fake2.jpg";
+import mochaMachiatos from "../img/fake3.jpeg";
 import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
 import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";
@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 export let coffeeProduct = [
     {
         id: 1,
-        img: kemsua,
+        img: mochaMachiatos,
         name: "soda chanh",
         price: 45,
     },
@@ -48,7 +48,7 @@ function Soda(props) {
     let coffeeProduct = [
         {
             id: 1,
-            img: kemsua,
+            img: mochaMachiatos,
             name: "soda chanh",
             price: 45,
         },

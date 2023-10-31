@@ -13,12 +13,13 @@
 
 .productItem {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem !important;
+
     .img {
         margin-bottom: 1rem;
         img {
             @include abstracts.breakpoint(lg) {
-                width: 11rem;
+                width: 9rem;
             }
             width: 20rem;
             object-fit: cover;
