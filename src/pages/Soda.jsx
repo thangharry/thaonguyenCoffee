@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import styles from "./Soda.module.scss";
-import mochaMachiatos from "../img/fake3.jpeg";
+import mochaMachiatos from "../img/pagecoffee-bacsiuda.jpg";
 import bacsiuda from "../img/pagecoffee-bacsiuda.jpg";
 import caraMachiata from "../img/pagecoffee-caramachiata.jpg";
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";

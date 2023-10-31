@@ -7,7 +7,6 @@ import dacbiet from "../img/trasuadacbietTN.jpeg";
 import kemtrung from "../img/trasuakemtrungTN.jpeg";
 import socola from "../img/trasuasocolaTN.jpeg";
 import truyenthong from "../img/trasuatruyenthongTN.jpeg";
-
 // sửa ảnh
 import mochaMachiato from "../img/pagecoffee-macchiato.jpg";
 
@@ -21,7 +20,7 @@ export let coffeeProduct = [
     {
         id: 2,
 
-        img: mochaMachiato,
+        img: caramel,
         name: "Trà sữa trân châu caramel",
         price: 25,
     },
@@ -66,7 +65,7 @@ function Trasua(props) {
         {
             id: 2,
 
-            img: mochaMachiato,
+            img: caramel,
             name: "Trà sữa trân châu caramel",
             price: 25,
         },

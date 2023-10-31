@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid, Typography } from "@mui/material";
 import styles from "./Coffee.module.scss";
-import denda from "../img/pagecoffee-caramachiata.jpg";
+import denda from "../img/cafedendaTN.jpg";
 import bacsiuda from "../img/cafesuadaTN.webp";
 import suatuoi from "../img/cafesuatuoiTN.webp";
 import cacaosua from "../img/cacaosuaTN.webp";

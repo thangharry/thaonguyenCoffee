@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { coffeeProduct } from "./Trasua";
 import styles from "./Detail.module.scss";
@@ -6,10 +6,6 @@ import styles from "./Detail.module.scss";
 import { Button, Container, Typography } from "@mui/material";
 
 import { toast } from "react-toastify";
-
-import { ShopContext } from "./context/Shop_context";
-
-import { PRODUCT } from "../pages/Product";
 
 import { useCart } from "./context/Shop_context";
 
@@ -34,7 +30,7 @@ function DetailTrasua({ match }) {
 
     const productPrices = sanpham.prices.find((i) => i.id === product.id);
 
-    let [t, setsize] = useState(sanpham.sizes[0]);
+    let [setsize] = useState(sanpham.sizes[0]);
     let [price, setprice] = useState(productPrices.prices[0]);
 
     const handleSizeChange = (selectsize) => {
