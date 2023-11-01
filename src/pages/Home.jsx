@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import styles from "./Home.module.scss";
-import Header from "../components/Header";
 import SlideBar from "../components/SlideBar";
 import { Grid } from "@mui/material";
 import homeBaner from "../img/homeBaner.jpg";

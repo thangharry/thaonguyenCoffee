@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./SlideBar.module.scss";
-import Slide01 from "../img/home2TN.jpg";
-import Slide02 from "../img/home1TN.jpg";
 import Slide03 from "../img/sildeBar-03.jpg";
 import Slide04 from "../img/sildeBar-04.png";
 import Slide05 from "../img/sildeBar-05.png";

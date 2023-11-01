@@ -5,7 +5,7 @@ import styles from "./Detail.module.scss";
 
 import { Button, Container, Typography } from "@mui/material";
 
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { useCart } from "./context/Shop_context";
 
 function DetailTratraicay({ match }) {
@@ -36,7 +36,7 @@ function DetailTratraicay({ match }) {
 
     const productPrices = sanpham.prices.find((i) => i.id === product.id);
 
-    let [t, setsize] = useState(sanpham.sizes[0]);
+    let [setsize] = useState(sanpham.sizes[0]);
     let [price, setprice] = useState(productPrices.prices[0]);
 
     const handleSizeChange = (selectsize) => {

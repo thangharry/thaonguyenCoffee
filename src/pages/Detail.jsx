@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { coffeeProduct } from "./Coffee";
 import styles from "./Detail.module.scss";
 
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 
 import { Button, Container, Typography } from "@mui/material";
 import { useCart } from "./context/Shop_context";
