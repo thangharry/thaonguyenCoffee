@@ -5,7 +5,7 @@ import styles from "./Detail.module.scss";
 
 import { Button, Container, Typography } from "@mui/material";
 
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { useCart } from "./context/Shop_context.jsx";
 
 function DetailMonkhac({ match }) {

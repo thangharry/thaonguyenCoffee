@@ -62,17 +62,14 @@ function Hethongcuahang(props) {
                     <Grid item md={6} xs={12} className={styles.mapStore}>
                         <div>
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.
-8466731457767!2d106.73083067520379!3d10.828646747155629!2m3!1f0!2f0!3f0!
-3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293f3ec83dad%3A0xddcb6d2247c46a8b
-!2sTH%E1%BA%A2O%20NGUY%C3%8AN%20COFFEE%20-%20TEA%20-%20JUICE!5e0!3m2!1svi!2
-s!4v1697899212110!5m2!1svi!2s"
+                                title="My Unique Title"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.8466731457767!2d106.73083067520379!3d10.828646747155629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293f3ec83dad%3A0xddcb6d2247c46a8b!2sTH%E1%BA%A2O%20NGUY%C3%8AN%20COFFEE%20-%20TEA%20-%20JUICE!5e0!3m2!1svi!2s!4v1697899212110!5m2!1svi!2s"
                                 width="600"
                                 height="450"
-                                allowfullscreen=""
+                                allowFullScreen=""
                                 loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
+                                referrerPolicy="no-referrer-when-downgrade"
+                            />
                         </div>
                     </Grid>
                 </Grid>
